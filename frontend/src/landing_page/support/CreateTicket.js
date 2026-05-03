@@ -234,8 +234,6 @@
 
 // export default CreateTicket;
 
-
-
 import React from "react";
 import { Link } from "react-router-dom";
 
@@ -258,28 +256,26 @@ function CreateTicket() {
           To create a ticket, select a relevant topic
         </h1>
 
-        {[...Array(6)].map((_, index) => (
-          <div className="col-4 p-5 mt-2 mb-2" key={index}>
-            <h4>
-              <i className="fa fa-plus-circle" aria-hidden="true"></i>{" "}
-              Account Opening
-            </h4>
+        <div className="col-4 p-5 mt-2 mb-2">
+          <h4>
+            <i className="fa fa-plus-circle" aria-hidden="true"></i>{" "}
+            Account Opening
+          </h4>
 
-            {topics.map((item, i) => (
-              <Link
-                key={i}
-                to="/"
-                style={{
-                  textDecoration: "none",
-                  lineHeight: "2.5",
-                  display: "block",
-                }}
-              >
-                {item}
-              </Link>
-            ))}
-          </div>
-        ))}
+          {topics.map((item, i) => (
+            <Link
+              key={i}
+              to="/"
+              style={{
+                textDecoration: "none",
+                lineHeight: "2.5",
+                display: "block",
+              }}
+            >
+              {item}
+            </Link>
+          ))}
+        </div>
 
       </div>
     </div>
