@@ -98,3 +98,4 @@ function Hero() {
 }
 
 export default Hero;
+console.log("UPDATED HERO FILE");
