@@ -15,7 +15,9 @@ const uri = process.env.MONGO_URL;
 
 const app = express();
 
-app.use(cors());
+app.use(cors({
+  origin: 'npx plugins add vercel/vercel-plugin'  // apna Vercel URL
+}));
 app.use(bodyParser.json());
 
 // app.get("/addHoldings", async (req, res) => {
