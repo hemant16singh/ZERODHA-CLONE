@@ -1,0 +1,12 @@
+# Query: localhost:3002
+
+3 results - 3 files
+
+dashboard\src\components\BuyActionWindow.js:
+  15:     axios.post(`${process.env.REACT_APP_API_URL}/newOrder`, {
+
+dashboard\src\components\Holdings.js:
+  11:     axios.get(`${process.env.REACT_APP_API_URL}/allHoldings`).then((res) => {
+
+dashboard\src\components\Positions.js:
+  58:       .get(`${process.env.REACT_APP_API_URL}/allPositions`)
