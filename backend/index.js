@@ -16,7 +16,7 @@ const uri = process.env.MONGO_URL;
 const app = express();
 
 app.use(cors({
-  origin: 'npx plugins add vercel/vercel-plugin'  // apna Vercel URL
+  origin: 'https://zerodha-clone-hsd5.vercel.app'
 }));
 app.use(bodyParser.json());
 
