@@ -16,7 +16,8 @@ const uri = process.env.MONGO_URL;
 const app = express();
 
 app.use(cors({
-  origin: 'https://zerodha-clone-hsd5.vercel.app'
+  origin: ['https://zerodha-clone-hsd5.vercel.app' ,
+  'http://localhost:3000' ]
 }));
 app.use(bodyParser.json());
 
