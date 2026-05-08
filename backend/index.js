@@ -17,7 +17,8 @@ const app = express();
 
 app.use(cors({
   origin: ['https://zerodha-clone-hsd5.vercel.app' ,
-  'http://localhost:3000' ]
+  'http://localhost:3000' ,
+'https://zerodha-clone-r41ti25xz-hemant16singhs-projects.vercel.app']
 }));
 app.use(bodyParser.json());
 
