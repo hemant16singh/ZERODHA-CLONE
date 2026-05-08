@@ -65,6 +65,92 @@
 
 
 
+// import React from "react";
+// import { Link } from "react-router-dom";
+
+// function Navbar() {
+//   return (
+//     <nav
+//       className="navbar navbar-expand-lg border-bottom sticky-top"
+//       style={{ backgroundColor: "#FFF" }}
+//     >
+//       <div className="container py-2">
+
+//         {/* LOGO */}
+//         <Link className="navbar-brand" to="/">
+//           <img
+//             src="media/images/logo.svg"
+//             alt="Logo"
+//             className="img-fluid"
+//             style={{ width: "140px" }}
+//           />
+//         </Link>
+
+//         {/* TOGGLER BUTTON */}
+//         <button
+//           className="navbar-toggler"
+//           type="button"
+//           data-bs-toggle="collapse"
+//           data-bs-target="#navbarSupportedContent"
+//           aria-controls="navbarSupportedContent"
+//           aria-expanded="false"
+//           aria-label="Toggle navigation"
+//         >
+//           <span className="navbar-toggler-icon"></span>
+//         </button>
+
+//         {/* NAV ITEMS */}
+//         <div
+//           className="collapse navbar-collapse justify-content-end"
+//           id="navbarSupportedContent"
+//         >
+
+//           <ul className="navbar-nav mb-2 mb-lg-0 text-center">
+
+//             <li className="nav-item">
+//               <Link className="nav-link px-3" to="/signup">
+//                 Signup
+//               </Link>
+//             </li>
+
+//             <li className="nav-item">
+//               <Link className="nav-link px-3" to="/about">
+//                 About
+//               </Link>
+//             </li>
+
+//             <li className="nav-item">
+//               <Link className="nav-link px-3" to="/product">
+//                 Product
+//               </Link>
+//             </li>
+
+//             <li className="nav-item">
+//               <Link className="nav-link px-3" to="/pricing">
+//                 Pricing
+//               </Link>
+//             </li>
+
+//             <li className="nav-item">
+//               <Link className="nav-link px-3" to="/support">
+//                 Support
+//               </Link>
+//             </li>
+
+//           </ul>
+
+//         </div>
+//       </div>
+//     </nav>
+//   );
+// }
+
+// export default Navbar;
+
+
+
+
+
 import React from "react";
 import { Link } from "react-router-dom";
 
@@ -101,10 +187,9 @@ function Navbar() {
 
         {/* NAV ITEMS */}
         <div
-          className="collapse navbar-collapse justify-content-end"
+         className="collapse navbar-collapse justify-content-end"
           id="navbarSupportedContent"
         >
-
           <ul className="navbar-nav mb-2 mb-lg-0 text-center">
 
             <li className="nav-item">
@@ -137,8 +222,19 @@ function Navbar() {
               </Link>
             </li>
 
-          </ul>
+            {/* DASHBOARD BUTTON */}
+            <li className="nav-item ms-2">
+              
+             <a   className="btn btn-primary text-white px-3 py-2"
+                href="https://zerodha-clone-r41ti25xz-hemant16singhs-projects.vercel.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Dashboard
+              </a>
+            </li>
 
+          </ul>
         </div>
       </div>
     </nav>
@@ -146,3 +242,9 @@ function Navbar() {
 }
 
 export default Navbar;
+
+
+
+
+
+
