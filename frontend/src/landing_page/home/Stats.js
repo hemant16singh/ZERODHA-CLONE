@@ -38,12 +38,12 @@ import { Link } from "react-router-dom";
 
 function Stats() {
   return (
-    <div className="container p-3">
-      <div className="row p-5">
+    <div className="container py-3">
+      <div className="row align-items-center">
 
         {/* LEFT CONTENT */}
-        <div className="col-6 p-5">
-          <h1 className="mb-5 fs-2">Trust with confidence</h1>
+        <div className="col-lg-6 col-md-12 p-lg-5 p-3">
+          <h1 className="mb-4 fs-2">Trust with confidence</h1>
 
           <h2 className="fs-4">Customer-first always</h2>
           <p className="text-muted">
@@ -53,7 +53,7 @@ function Stats() {
 
           <h2 className="fs-4">No spam or gimmicks</h2>
           <p className="text-muted">
-            No gimmicks, spam, "gamification", or annoying push notifications.
+            No gimmicks, spam, gamification, or annoying push notifications.
             High quality apps that you use at your pace.
           </p>
 
@@ -69,17 +69,17 @@ function Stats() {
         </div>
 
         {/* RIGHT CONTENT */}
-        <div className="col-6 p-5">
+        <div className="col-lg-6 col-md-12 text-center p-lg-5 p-3">
           <img
             src="media/images/ecosystem.png"
             alt="ecosystem"
-            style={{ width: "95%" }}
+            className="img-fluid"
+            style={{ maxWidth: "95%" }}
           />
 
-          <div className="text-center mt-3">
+          <div className="mt-4 d-flex flex-column flex-md-row justify-content-center align-items-center gap-3">
             <Link
               to="/product"
-              className="mx-5"
               style={{ textDecoration: "none" }}
             >
               Explore our products{" "}
@@ -88,7 +88,6 @@ function Stats() {
 
             <Link
               to="/demo"
-              className="mx-5"
               style={{ textDecoration: "none" }}
             >
               Try kite demo{" "}

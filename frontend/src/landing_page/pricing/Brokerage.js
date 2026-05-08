@@ -103,7 +103,7 @@ function Brokerage() {
     <div className="container">
       
       {/* TOP SECTION */}
-      <div className="row p-5 mt-5 text-center border-top">
+      <div className="row p-3 p-md-5 mt-5 text-center border-top">
         
         {/* FIXED LINK */}
         <Link to="/charges" style={{ textDecoration: "none" }}>
@@ -111,7 +111,7 @@ function Brokerage() {
         </Link>
 
         {/* LEFT COLUMN */}
-        <div className="col-6 p-4 mt-3">
+        <div className="col-12 col-md-6 p-3 p-md-4 mt-3">
           <h3>Securities/Commodities transaction tax</h3>
           <p>
             Tax by the government when transacting on the exchanges. Charged as
@@ -156,7 +156,7 @@ function Brokerage() {
         </div>
 
         {/* RIGHT COLUMN */}
-        <div className="col-6 p-4 mt-3">
+        <div className="col-12 col-md-6 p-3 p-md-4 mt-3">
           <h3>GST</h3>
           <p>
             Tax levied by the government on services. 18% of brokerage + charges.
@@ -195,7 +195,7 @@ function Brokerage() {
       </div>
 
       {/* DISCLAIMER */}
-      <div className="row p-5 border-top">
+      <div className="row p-3 p-md-5 border-top">
         <h3>Disclaimer</h3>
         <p>
           Brokerage will not exceed rates specified by SEBI. All statutory
